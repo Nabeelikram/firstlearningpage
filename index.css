@@ -10,7 +10,7 @@
     background-color: white;
 }
 .title-image-container{
-    width: 230px;
+    width: 250px;
     align-content: center;
     padding-left: 30px;
 
@@ -92,19 +92,96 @@
 .main-banner{
     background-image: url("/Users/nabeelikram/Desktop/banner2.webp");
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-size:cover ;
+
+
 }
-.main-banner img {
-    display: flex;
-    width: 450px;
-    height: 462px ;
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+
+}
+.main-banner .image-container{
+    width: 870px;
+    height: 550px;
+    z-index: 1;
+}
+.main-banner .image-container img{
+    width: 100%;
+    height: 100%;
 }
 .main-banner .main-text{
     padding: 60px 30px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: left;
-
+    z-index: 1;
+}
+.main-text h2{
+    opacity: 60%;
+    font-weight: light;
+    font-size: medium;
+}
+.main-text h1{
+    font-size: 40px;
+}
+.main-text p{
+    font-weight: lighter;
+    font-size: large;
+}
+.main-text .features{
+    list-style: none;
+    font-weight: bolder;
+    
+}
+.main-text .features li{
+    padding-left: 15px;
+    position: relative;
+    
+}
+.main-text .features span{
+    background-color: rgb(0,204,203);
+    width: 4px;
+    height: 19px;
+    position: absolute;
+    left: 0;  
+}
+.description-and-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+.description-and-data .image-container{
+    width: 550px;
+    height: 600px;
+    justify-items: flex-start;
+}
+.description-and-data .image-container img{
+    width: 100%;
+    height: 100%;
+}
+.description-and-data .sub-text{
+    padding: 40px 5px;
+    justify-items: end;
+}
+.sub-text h3{
+    color: blue;
+}
+.sub-text h1{
+    font-size: 35px;
+}
+.sub-text p{
+    line-height: 25px;
+    font-size: large;
+    font-weight: light;
 }
