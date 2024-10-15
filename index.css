@@ -108,7 +108,7 @@
 
 }
 .main-banner .image-container{
-    width: 870px;
+    width: 730px;
     height: 550px;
     z-index: 1;
 }
@@ -252,5 +252,15 @@
     color: white;
     border-radius: 30px;
     border: none;
-
+}
+.Get-in-touch{
+    padding: 70px 60px;
+}
+.Get-in-touch .image-container{
+    width: 100%;
+}
+.Get-in-touch .image-container img{
+    width: 100%;
+    border-radius: 40px;
+    
 }
