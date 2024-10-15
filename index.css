@@ -58,9 +58,7 @@
 }
 .drop{
     position: relative;
-
 }
-
 .drop-down{
     position: absolute;
     top: 100%;
@@ -72,10 +70,9 @@
     height: 160px;
     list-style: none;
     text-align: start;
-    z-index: 1;
+    z-index: 2;
     overflow-y:auto;
     display: none;
-    
 }
 
 .drop a:hover .drop-down{
@@ -184,4 +181,76 @@
     line-height: 25px;
     font-size: large;
     font-weight: light;
+}
+
+.stats{
+    display: flex;
+}
+.sub-text .stats li{
+    list-style: none;
+    line-height: 40px;
+    padding-left: 15px;
+    padding-right: 100px;
+    border-left: rgb(168, 168, 241) 3px solid;
+    font-weight: bolder;
+    
+}
+.sub-text .stats .num{
+    color: blue;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.Services{
+    background-color: rgb(245,246,247);
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.service-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.service-header div{
+    width: 50%;
+    padding: 20px 0px;
+    padding-left: 20px;
+}
+.service-header .description{
+    width: 50%;
+    line-height: 25px;
+}
+.Services h3{
+    color: blue;
+    font-size: 15px;
+}
+.Services h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    gap: 80px;
+}
+.Services-provided i{
+    background-color:rgb(230,234,248);
+    color: rgb(64,91,247);
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 90px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.Services-provided p{
+    line-height: 25px;
+}
+.Services-provided .button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    border: none;
+
 }
